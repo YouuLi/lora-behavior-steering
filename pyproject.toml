@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lora-behavior-steering"
+version = "0.1.0"
+description = "Extract and compose detail and register directions in LoRA effective-update space."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26,<3",
+  "torch>=2.2",
+  "transformers>=4.46",
+  "peft>=0.13",
+  "safetensors>=0.4",
+  "accelerate>=0.34",
+  "sentencepiece>=0.2",
+  "huggingface_hub>=0.26",
+]
+
+[project.scripts]
+lora-steering-extract = "lora_behavior_steering.cli_extract:main"
+lora-steering-generate = "lora_behavior_steering.cli_generate:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

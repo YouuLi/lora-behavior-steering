@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+.env
+
+# Large model and experiment artifacts
+models/
+checkpoints/
+saves/
+outputs/
+vectors/*.safetensors
+data/*.jsonl
+!data/sample_prompts.jsonl
+hf_dataset/data/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+

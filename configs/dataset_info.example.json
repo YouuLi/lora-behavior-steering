@@ -1,0 +1,19 @@
+{
+  "alpaca_detail_score1_1k": {
+    "file_name": "alpaca_detail_score1_1k.jsonl",
+    "columns": {"prompt": "instruction", "query": "input", "response": "output"}
+  },
+  "alpaca_detail_score5_1k": {
+    "file_name": "alpaca_detail_score5_1k.jsonl",
+    "columns": {"prompt": "instruction", "query": "input", "response": "output"}
+  },
+  "alpaca_register_score1_1k": {
+    "file_name": "alpaca_register_score1_1k.jsonl",
+    "columns": {"prompt": "instruction", "query": "input", "response": "output"}
+  },
+  "alpaca_register_score5_1k": {
+    "file_name": "alpaca_register_score5_1k.jsonl",
+    "columns": {"prompt": "instruction", "query": "input", "response": "output"}
+  }
+}
+
